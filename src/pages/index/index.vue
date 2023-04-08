@@ -1,53 +1,25 @@
+<!--
+ * @Author: czj306 306205161@qq.com
+ * @Date: 2023-04-08 13:22:54
+ * @LastEditors: czj306 306205161@qq.com
+ * @LastEditTime: 2023-04-08 14:41:20
+ * @FilePath: /wxLetgo/src/pages/index/index.vue
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
 <template>
-  <view class="index">
-    <view>
-      <img src="" alt="">
-    </view>
-    {{ msg }} <Dongdong />
-    <view class="btn">
-      <nut-button type="primary" @click="handleClick('text', msg2, true)">点我</nut-button>
-    </view>
-    <nut-toast :msg="msg2" v-model:visible="show" :type="type" :cover="cover"/>
-  </view>
+  <nabbar></nabbar>
+  <tabbar></tabbar>
 </template>
+<script lang="ts">
+  import { reactive, toRefs, onMounted } from 'vue';
+  export default {
+    props: {},
+    setup() {
+      
 
-<script>
-import { reactive, toRefs } from 'vue';
-import { Dongdong } from '@nutui/icons-vue-taro';
-export default {
-  name: 'Index',
-  components: {
-    Dongdong
-  },
-  setup() {
-    const state = reactive({
-      msg: '欢迎使用 NutUI4.0 开发小程序',
-      msg2: '你成功了～',
-      type: 'text',
-      show: false,
-      cover: false
-    });
+      return { 
 
-    const handleClick = (type, msg, cover = false) => {
-      state.show = true;
-      state.msg2 = msg;
-      state.type = type;
-      state.cover = cover;
-    };
-
-    return {
-      ...toRefs(state),
-      handleClick
+      };
     }
-  }
-}
+  };
 </script>
-
-<style lang="scss">
-.index {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-}
-</style>

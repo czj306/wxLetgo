@@ -9,7 +9,26 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
-    NutButton: typeof import('@nutui/nutui-taro')['Button']
-    NutToast: typeof import('@nutui/nutui-taro')['Toast']
+    Address: typeof import('./src/components/Address.vue')['default']
+    AddressList: typeof import('./src/components/AddressList.vue')['default']
+    Category: typeof import('./src/components/Category.vue')['default']
+    Cell: typeof import('./src/components/Cell.vue')['default']
+    Comment: typeof import('./src/components/Comment.vue')['default']
+    ConfigProvider: typeof import('./src/components/ConfigProvider.vue')['default']
+    Empty: typeof import('./src/components/Empty.vue')['default']
+    FixedNav: typeof import('./src/components/FixedNav.vue')['default']
+    ImagePreview: typeof import('./src/components/ImagePreview.vue')['default']
+    Menu: typeof import('./src/components/Menu.vue')['default']
+    Navbar: typeof import('./src/components/Navbar.vue')['default']
+    Noticebar: typeof import('./src/components/Noticebar.vue')['default']
+    NutCell: typeof import('@nutui/nutui-taro')['Cell']
+    NutTabbar: typeof import('@nutui/nutui-taro')['Tabbar']
+    NutTabbarItem: typeof import('@nutui/nutui-taro')['TabbarItem']
+    Searchbar: typeof import('./src/components/Searchbar.vue')['default']
+    Sku: typeof import('./src/components/Sku.vue')['default']
+    Swiper: typeof import('./src/components/Swiper.vue')['default']
+    Tabbar: typeof import('./src/components/Tabbar.vue')['default']
+    TimeSelect: typeof import('./src/components/TimeSelect.vue')['default']
+    Tour: typeof import('./src/components/Tour.vue')['default']
   }
 }
