@@ -22,6 +22,7 @@ declare module '@vue/runtime-core' {
     Navbar: typeof import('./src/components/Navbar.vue')['default']
     Noticebar: typeof import('./src/components/Noticebar.vue')['default']
     NutCell: typeof import('@nutui/nutui-taro')['Cell']
+    NutNavbar: typeof import('@nutui/nutui-taro')['Navbar']
     NutTabbar: typeof import('@nutui/nutui-taro')['Tabbar']
     NutTabbarItem: typeof import('@nutui/nutui-taro')['TabbarItem']
     Searchbar: typeof import('./src/components/Searchbar.vue')['default']
